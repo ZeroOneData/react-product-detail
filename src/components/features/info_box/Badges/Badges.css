@@ -1,0 +1,90 @@
+.div-badges {
+    width: 271px;
+    height: 20px;
+    /* background-color: #d2de1f; */
+    display: flex;
+    position:absolute;
+    top: 0px;
+    left:0px; 
+  }
+
+  .div-rts-background {
+    background-image: linear-gradient(270deg, #F5515F 0%, #FF7527 100%);
+    border-radius: 2px 0 0 2px;
+    width: 90px;
+    height: 20px;
+    /* background-color: #de1f52; */
+    /* top: 48px;
+    left:512px;  */
+  }
+
+  .label-rts {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    position:absolute;
+    top: 2px;
+    left: 8px;
+    font-weight: normal;
+  }
+
+  .div-instock-background {
+    background-color: #FFF0E6;
+    width: 75px;
+    height: 20px;
+    display: flex;
+    top: 0px;
+    left: 90px;
+  }
+
+  .label-instock {
+    color: #FF6600;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    /* margin-left: 4px; */
+    position:absolute;
+    top: 2px;
+    left: 114px;
+  }
+
+  .image-instock{
+    width: 12px;
+    height: 12px;
+    /* background-color: #FF6600; */
+    position:absolute;
+    top: 2px;
+    left: 98px;
+  }
+
+  .div-fast-despatch-background {
+    background-color: #FFF0E6;
+    width: 106px;
+    height: 20px;
+    display: flex;
+  }
+
+  .image-fast-despatch{
+    width: 12px;
+    height: 12px;
+    /* background-color: #FF6600; */
+    /* margin-left: 4px; */
+    position:absolute;
+    top: 2px;
+    left: 173px;
+  }
+
+  .label-fast-despatch {
+    color: #FF6600;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    /* margin-left: 4px; */
+    position:absolute;
+    top: 2px;
+    left: 189px;
+  }

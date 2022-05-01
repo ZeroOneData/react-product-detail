@@ -1,0 +1,43 @@
+.div-expo-background {
+    background-color: #FFF0E6;
+    width: 526px;
+    height: 40px;
+    position: absolute;
+    top: 192px;
+    display: flex;
+  }
+
+  .logo-expo {
+    width: 76px;
+    height: 40px;
+  }
+
+  .label-free-shipping {
+    color: #FF6600;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    position: absolute;
+    top: 12px;
+    left: 100px;
+  }
+
+  .label-on-time-delivery {
+    color: #FF6600;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    position: absolute;
+    top: 12px;
+    left: 291px;
+  }
+
+  .image-expo {
+    width: 8px;
+    height: 14px;
+    position:absolute;
+    top: 12px;
+    left: 502px;
+  }
