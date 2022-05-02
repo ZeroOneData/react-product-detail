@@ -1,0 +1,40 @@
+.div-trade-assurance {
+    width: 306px;
+    height: 16px;
+    position: absolute;
+    /* top: 14px;
+    left: 13px */
+    top: 472px;
+    display: flex;
+    /* background-color: #F5515F; */
+  }
+  
+  .icon-trade-assurance {
+    width: 12px;
+    height: 14px;
+    left: 1px;
+  }
+  
+  .label-trade {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    width: 107px;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+  }
+  
+  .label-alibab {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    width: 181px;
+    height: 16px;
+    position: absolute;
+    left: 125px;
+  }

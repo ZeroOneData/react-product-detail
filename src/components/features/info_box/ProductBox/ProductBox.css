@@ -1,0 +1,135 @@
+.div-product {
+    width: 526px;
+    height: 144px;
+    /* background-color: #27b33c; */
+    position: absolute;
+    top: 304px;
+  }
+
+  .div-product-row {
+    width: 526px;
+    height: 40px;
+    /* background-color: #b32727; */
+    position: absolute;
+    display: flex;
+  }
+
+  .label-product-attribute {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    width: 112px;
+    text-align: left;
+    position: absolute;
+    top: 12px;
+  }
+
+  .label-product-option-name {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    width: 174px;
+    text-align: left;
+    position: absolute;
+    top: 12px;
+    left: 112px;
+  }
+
+  .label-product-option-price {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    position: absolute;
+    top: 12px;
+    left: 286px;
+  }
+
+  .div-product-quantinity {
+      width: 160px;
+      height: 40px;
+      position: absolute;
+      /* background-color: coral; */
+      left: 366px;
+      display: flex;
+  }
+
+  .button-icon-minus-foreground {
+    /* background-color: rgba(255, 255, 255, 0); */
+    border: 1px solid #E6E7EB;
+    border-radius: 2px 0 0 2px;
+    width: 40px;
+    height: 40px;
+    /* background-color: rgb(106, 183, 23); */
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+  }
+
+  .button-icon-minus-foreground-active{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #FF6600;
+    border-radius: 0 2px 2px 0;
+    width: 40px;
+    height: 40px;
+    /* background-color: rgb(106, 183, 23); */
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+  }
+
+  .button-icon-minus {
+      width: 14px;
+      height: 2px;
+      position: absolute;
+      top: 19px;
+      left: 13px
+  }
+
+  .input-quantity-foreground {
+    background-color: rgba(255, 255, 255, 0);
+    /* background-color:#FF6600; */
+    box-shadow: inset 0 1px 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    color: #999999;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .label-quantity-value {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    width: 80px;
+    text-align: center;
+    position: absolute;
+    top: 12px;
+  }
+
+  .button-icon-plus-foreground{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #FF6600;
+    border-radius: 0 2px 2px 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 120px;
+  }
+
+
+  .button-icon-plus {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    left: 13px
+}

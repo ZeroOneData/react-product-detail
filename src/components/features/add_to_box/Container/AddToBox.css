@@ -1,0 +1,11 @@
+.div-add-to-box {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+    width: 306px;
+    height: 482px;
+    /* background-color: #1c87f2; */
+    position:absolute;
+    top: 48px;
+    left:1062px; 
+  }

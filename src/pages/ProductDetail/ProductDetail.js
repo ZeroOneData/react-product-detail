@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './ProductDetail.css'
-import InfoBox from './components/features/info_box/Cointainer/InfoBox'
-import AddToBox from './components/features/add_to_box/AddToBox'
+import InfoBox from '../../components/features/info_box/Cointainer/InfoBox';
+import AddToBox from '../../components/features/add_to_box/Container/AddToBox';
 
-function ProductDetail(props) {
+function ProductDetail() {
 
     const [product, setProduct] = useState([]);
-    const [clonedProduct, setClonedProduct] = useState([])
-    const [name, setName] = useState('');
     const [image, setImage] = useState(null);
     const [qty1080p, setQty1080p] = useState(0);
     const [qty4K, setQty4K] = useState(0);
@@ -16,7 +14,6 @@ function ProductDetail(props) {
     const [errorCode, setErrorCode] = useState(null);
     const [isLoading, setIsLoading] = useState(true)
     const [openErrorDialog, setOpenErrorDialog] = useState(false);
-    // const classes = useStyles()
 
     useEffect(() => {
         fetch(`https://fe-assignment.vaimo.net/`)
@@ -28,8 +25,7 @@ function ProductDetail(props) {
             return res.json()
         })
         .then(data => {
-            setProduct(data)
-            setName(data.product.name)            
+            setProduct(data)           
             setImage(data.product.gallery[0].main)
             console.log(data.product.gallery[0].main)
             setIsLoading(false)
@@ -48,12 +44,14 @@ function ProductDetail(props) {
     }, [])
 
     if (isLoading) {
-        return <p>Data is loading...</p>;
+        return <h3>Data is loading...</h3>;
       }
+    if (openErrorDialog) {
+        return <h3>{`Unable to reach the api: ${errorCode} - ${error}`}</h3>
+    }
 
     return (
         <div className='div-main'>
-            {/* <div style={{display: 'flex'}}> */}
             <img  className="image" src= {`${image}`}></img>
             <InfoBox 
                 product={product} 
@@ -62,10 +60,15 @@ function ProductDetail(props) {
                 qtyBattery={qtyBattery} 
                 setQty1080p={setQty1080p}
                 setQty4K={setQty4K}
-                setQtyBattery={setQtyBattery} />
-            <AddToBox product={product}/>
-            {/* </div> */}
-            <div className='div-background'></div>
+                setQtyBattery={setQtyBattery}
+            />
+            <AddToBox 
+                product={product} 
+                qty1080p={qty1080p} 
+                qty4K={qty4K} 
+                qtyBattery={qtyBattery} 
+            />
+            <div className='div-background' />
         </div>
 
     )    

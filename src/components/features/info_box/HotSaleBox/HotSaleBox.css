@@ -1,0 +1,21 @@
+.div-hot-sale-background {
+    background-color: #EDF0F3;
+    width: 111px;
+    height: 20px;
+    position:absolute;
+    top: 52px;
+    left:274px;
+  }
+
+  .label-hot-sale {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    position:absolute;
+    top: 2px;
+    left: 8px;
+    
+    
+  }

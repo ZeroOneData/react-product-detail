@@ -1,0 +1,30 @@
+.div-links {
+    width:252px;
+    height: 16px;
+    position: absolute;
+    top: 528px;
+    /* background-color: aqua; */
+  }
+  
+  .label-link-alibab {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    width:119px;
+    height: 16px;
+    position: absolute;
+  }
+  
+  .label-link-inspection {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    width:109px;
+    height: 16px;
+    position: absolute;
+    left: 143px;
+  }

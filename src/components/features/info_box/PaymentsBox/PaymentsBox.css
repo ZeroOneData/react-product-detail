@@ -1,0 +1,40 @@
+.div-payments {
+    width: 130px;
+    height: 16px;
+    position: absolute;
+    top: 500px;
+    /* background-color:#F5515F */
+  }
+  
+  .label-payments {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    position: absolute;
+  }
+  
+  .icon-visa {
+  width: 17px; 
+  height: 12px;
+  position: absolute;
+  left: 60px ;
+  top: 2px; 
+  }
+  
+  .icon-mastercard {
+    width: 17px; 
+    height: 12px;
+    position: absolute;
+    left: 81px ;
+    top: 2px; 
+  }
+  
+  .icon-apple-pay {
+    width: 28px; 
+    height: 12px;
+    position: absolute;
+    left: 102px ;
+    top: 2px; 
+  }

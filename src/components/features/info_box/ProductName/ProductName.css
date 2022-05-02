@@ -1,0 +1,12 @@
+.label-product-name {
+    color: #333333;
+    font-family: Roboto;
+    /* background-color: #FF6600; */
+    font-size: 16px;
+    line-height: 24px;
+    width: 526px;
+    height: 48px;
+    text-align: left;
+    position:absolute;
+    top: 28px;
+  }
