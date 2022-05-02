@@ -2,7 +2,8 @@
     position: absolute;
     top: 226px;
     width: 306px;
-    height: 2556px;
+    height: 256px;
+    /* background-color: #63d958; */
 }
 
 .label-ship-to-south-africa {
@@ -142,4 +143,142 @@
     height: 20px;
     left: 62px;
     top: 10px;
+  }
+
+  @media screen  and (max-width: 500px) { 
+
+    .div-bottom-content {
+      top: 226px;
+      width: 336pt;
+      height: 256pt;
+      /* background-color: #63d958; */
+  }
+  
+  .label-ship-to-south-africa {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 28pt;
+      left: 26pt;
+      width: 145pt;
+      height: 32pt;
+    }
+    
+    .label-total-cost {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 16pt;
+      font-weight: bold;
+      line-height: 24pt;
+      text-align: right;
+      top: 24pt;
+      left: 236pt;
+      width: 86pt;
+      height: 24pt;
+    }
+    
+    .div-lead-time {
+      width:158pt;
+      height: 16pt;
+      left: 26pt;
+      top: 72pt;
+      /* background-color: aqua; */
+    }
+    
+    .label-lead-time {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      width:130pt;
+      height: 16pt;
+    }
+    
+    .icon-lead-time {
+      width: 15pt;
+      height: 14pt;
+      top: 1pt;
+      left: 143pt;
+    }
+    
+    .div-shipping-time {
+      width:195pt;
+      height: 16pt;
+      left: 26pt;
+      top: 100pt;
+      /* background-color: aqua; */
+    }
+    
+    .label-shipping-time {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      width:167pt;
+      height: 16pt;
+    }
+    
+    .icon-shipping-time {
+      width: 16pt;
+      height: 14pt;
+      top: 1pt;
+      left: 179pt;
+    }
+    
+    .button-login-background {
+      background-color: #FF6600;
+      border-radius: 20pt;
+      width: 284pt;
+      height: 40pt;
+      left: 26pt;
+      top: 140pt;
+    }
+    
+    .button-login-label {
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 20pt;
+      width: 236pt;
+      height: 20pt;
+      text-align: center;
+      left: 24pt;
+      top: 10pt;
+    }
+    
+    .button-supplier-background {
+      background-color: rgba(255, 255, 255, 0);
+      border: 1pt solid #FF6600;
+      border-radius: 20pt;
+      width: 284pt;
+      height: 40pt;
+      left: 26pt;
+      top: 192pt;
+    }
+    
+    .button-supplier-icon {
+      width: 14pt;
+      height: 12pt;
+      top: 14pt;
+      left: 47pt;
+    
+    }
+    
+    .button-supplier-label {
+      color: #FF6600;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 20pt;
+      text-align: center;
+      width: 128pt;
+      height: 20pt;
+      left: 73pt;
+      top: 10pt;
+    }
+  
+    
   }

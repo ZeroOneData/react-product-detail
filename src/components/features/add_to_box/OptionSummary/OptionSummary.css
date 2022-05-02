@@ -78,3 +78,81 @@
     left: 224px;
     /* background-color: blueviolet; */
   }
+
+  @media screen  and (max-width: 500px) { 
+
+    .div-top-content {
+      /* background-color: rgb(211, 231, 62); */
+      width: 336pt;
+      height: 256pt;
+      top: 7.5pt;
+  }
+  
+  .div-product-row-summary {
+      width: 336pt;
+      height: 38pt;
+      /* background-color: #b32727; */
+      display: flex;
+    }
+  
+    .label-product-attribute-summary {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      width: 102pt;
+      left: 24pt;
+      top: 8pt;
+      /* background-color: #3c73d2; */
+    }
+  
+    .label-product-option-name-summary {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      width: 102pt;
+      top: 8pt;
+      left: 112pt;
+      /* background-color: #3c73d2; */
+    }
+  
+    .label-product-option-price-summary {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: center;
+      width: 82pt;
+      top: 8pt;
+      left: 224pt;
+      /* background-color: blueviolet; */
+    }
+  
+    .label-product-total-summary {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      width: 102pt;
+      font-weight: bold;
+      top: 136pt;
+      left: 112pt;
+      /* background-color: #3c73d2; */
+    }
+  
+    .label-product-total-summary-value {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      font-weight: bold;
+      line-height: 16pt;
+      text-align: center;
+      width: 82pt;
+      top: 136pt;
+      left: 224pt;
+      /* background-color: blueviolet; */
+    }
+  
+    
+  }

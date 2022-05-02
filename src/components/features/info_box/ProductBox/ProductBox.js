@@ -63,7 +63,7 @@ function ProductBox({ product, qty1080p, qty4K, qtyBattery, setQty1080p, setQty4
             </div>
         </div>
         <div className='div-product-row' style={{marginTop: 52}}>
-        <div className='label-product-attribute'></div>
+            <div className='label-product-attribute'></div>
             <div className='label-product-option-name'>{option_labels[1].label}</div>
             <div className='label-product-option-price'>{`${option_labels[1].price.currency.symbol} ${option_labels[1].price.value}`}</div>
             <div className='div-product-quantinity'>

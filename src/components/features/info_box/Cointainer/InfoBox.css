@@ -7,14 +7,13 @@
     left:512px; 
   }
 
-  @media screen  and (max-width: 375px) { 
+  @media screen  and (max-width: 500px) { 
     .div-info-box {
-      width: 526px;
-      height: 544px;
+      width: 360pt;
+      height: 568pt;
       background-color: #114273;
-      position:absolute;
-      top: 48px;
-      left:512px; 
+      top: 372pt; 
+      left: 0pt;
     }
   
     
