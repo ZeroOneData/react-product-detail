@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Install and run application - guide
 
-## Available Scripts
+- run: "git clone https://github.com/ZeroOneData/react-product-detail.git" from your command line 
+- change into project directory [cd react-product-detail]
+- run: "npm install"    (to install project dependancies)
+- run: "npm start"      (to run the development server)
+- navigate to "https://localhost:3000" to view and interact with the ui
 
-In the project directory, you can run:
 
-### `npm start`
+# Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This application leverages javascript and the React.js library to deliver a modern, responsive, front-end web application. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The goal of the application is to provide a PIXEL-PERFECT product detail page for an E-commerce website. The app is intended to be fully responsive, providing both mobile and desktop designs.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Main features
 
-### `npm run build`
+* Implement a simple product detail page matching the mobile and desktop prototype designs provided by marvelapp.com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Data for the product must be fetched from the provided external API. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* No hardcoded HTML markup, unless for elements that are not provided by API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* QTY rockers next to product options should function (+ and - buttons increase and decrease QTY) as well as QTY itself must be an input field that 
+accepts valid numbers:
+    a. Lowest allowed value is 0. If the value is 0, - button becomes grayed out and non-clickable.
+    b. Increment step is 1 (if value is 3 and you press “+”, value changes to “4” and so forth).
+    c. If an incorrect value is entered using the input field (e.g. -10), on blur-event that value should
+    change to the last valid value used instead. - unimplemented
+    d. Having QTY 1 or more means the option is primed to be added to cart and must appear in the
+    right hand sidebar above shipping info.
 
-### `npm run eject`
+* Right sidebar should contain product options with QTY 1 or more (option summary) and the calculated price for each of them:
+    a. If an option with a price of R10 has QTY=2, the price in summary should be R20.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* API returns info for the shipping time and lead time. Add a tooltip on hover that displays it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* A functioning discount timer that counts down to the discount end date provided by the API.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* A fully functioning, reusable and shareable 'Quanity Rocker' component - configured to have different minvalue, max value and step increment value.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Tech-Stack utilised:
+    -   React.js
+    -   Tippy.js
+    -   react-countdown
+    -   javascript
+    -   Git
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application is not intended for production - it is, however intended for use as a solution to a coding challenge set forth during the interview process toward a Software Develepoment Role
