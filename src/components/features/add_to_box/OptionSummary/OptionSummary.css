@@ -1,6 +1,5 @@
 .div-top-content {
     position: absolute;
-    /* background-color: aqua; */
     width: 306px;
     height: 256px;
     top: 10px;
@@ -9,7 +8,6 @@
 .div-product-row-summary {
     width: 306px;
     height: 40px;
-    /* background-color: #b32727; */
     position: absolute;
     display: flex;
   }
@@ -23,7 +21,6 @@
     left: 24px;
     position: absolute;
     top: 12px;
-    /* background-color: #3c73d2; */
   }
 
   .label-product-option-name-summary {
@@ -32,11 +29,9 @@
     font-size: 14px;
     line-height: 16px;
     width: 102px;
-
     position: absolute;
     top: 12px;
     left: 112px;
-    /* background-color: #3c73d2; */
   }
 
   .label-product-option-price-summary {
@@ -49,7 +44,6 @@
     width: 82px;
     top: 12px;
     left: 224px;
-    /* background-color: blueviolet; */
   }
 
   .label-product-total-summary {
@@ -62,7 +56,6 @@
     position: absolute;
     top: 176px;
     left: 112px;
-    /* background-color: #3c73d2; */
   }
 
   .label-product-total-summary-value {
@@ -76,13 +69,10 @@
     width: 82px;
     top: 176px;
     left: 224px;
-    /* background-color: blueviolet; */
   }
 
   @media screen  and (max-width: 500px) { 
-
     .div-top-content {
-      /* background-color: rgb(211, 231, 62); */
       width: 336pt;
       height: 256pt;
       top: 7.5pt;
@@ -91,7 +81,6 @@
   .div-product-row-summary {
       width: 336pt;
       height: 38pt;
-      /* background-color: #b32727; */
       display: flex;
     }
   
@@ -103,7 +92,6 @@
       width: 102pt;
       left: 24pt;
       top: 8pt;
-      /* background-color: #3c73d2; */
     }
   
     .label-product-option-name-summary {
@@ -114,7 +102,6 @@
       width: 102pt;
       top: 8pt;
       left: 112pt;
-      /* background-color: #3c73d2; */
     }
   
     .label-product-option-price-summary {
@@ -126,7 +113,6 @@
       width: 82pt;
       top: 8pt;
       left: 224pt;
-      /* background-color: blueviolet; */
     }
   
     .label-product-total-summary {
@@ -138,7 +124,6 @@
       font-weight: bold;
       top: 136pt;
       left: 112pt;
-      /* background-color: #3c73d2; */
     }
   
     .label-product-total-summary-value {
@@ -151,8 +136,5 @@
       width: 82pt;
       top: 136pt;
       left: 224pt;
-      /* background-color: blueviolet; */
     }
-  
-    
   }

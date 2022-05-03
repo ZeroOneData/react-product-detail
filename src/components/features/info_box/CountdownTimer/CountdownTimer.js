@@ -4,6 +4,7 @@ import Countdown from 'react-countdown';
 
 function CountdownTimer({ discount }) {
 
+    //  function to implement active countdown timer component and logic
     const renderer = ({ hours, minutes, seconds, days }) => {
         return  <div className='label-date-time'>
                     {`${days}d:${hours}h:${minutes}m:${seconds}s`}

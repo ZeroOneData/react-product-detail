@@ -8,7 +8,8 @@ function AddToDetail({ shipping }) {
     return (
         <div className='div-bottom-content'>
             <div className='label-ship-to-south-africa'>
-                {(`Ship to ${shipping.method.country} by ${(shipping.method.title)}`).slice(0, 37)}...
+                <>Ship to</>
+                <><u>{(` ${shipping.method.country} by ${(shipping.method.title)}`).slice(0, 32)}...</u></>
             </div>
             <div className='label-total-cost'>
                 {`${shipping.method.cost.currency.symbol} ${shipping.method.cost.value.toFixed(2)}`}
@@ -20,7 +21,7 @@ function AddToDetail({ shipping }) {
                 </Tippy>
             </div>
             <div className='div-shipping-time'>
-                <div className='label-shipping-time'>{`Shipping time ${shipping.method.shipping_time.value}`} </div>
+                <div className='label-shipping-time'>{`Shipping time ${shipping.method.shipping_time.value}`}</div>
                 <Tippy content={shipping.method.shipping_time.info}>
                     <img className='icon-shipping-time' src={ INFO_ICON }></img>
                 </Tippy>

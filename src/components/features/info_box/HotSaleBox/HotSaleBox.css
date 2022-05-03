@@ -16,6 +16,24 @@
     position:absolute;
     top: 2px;
     left: 8px;
-    
-    
+  }
+
+  @media screen  and (max-width: 500px) { 
+    .div-hot-sale-background {
+      background-color: #EDF0F3;
+      width: 111pt;
+      height: 20pt;
+      top: 76pt;
+      left:237pt;
+    }
+  
+    .label-hot-sale {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 12pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 2pt;
+      left: 8pt;
+    }
   }

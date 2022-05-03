@@ -1,7 +1,6 @@
 .div-ratings-box {
     width: 242px;
     height: 16px;
-    /* background-color: #eeb792; */
     position:absolute;
     top: 88px;
     display: flex;
@@ -17,33 +16,10 @@
 
   }
 
-  /* .div-ratings-box-background {
-    background-color: #EDF0F3;
-    width: 111px;
-    height: 20px;
-    position:absolute;
-    top: 52px;
-    left:274px;
-  } */
-
-  .label-ratings-box {
-    /* color: #FF6600; */
-    font-family: Roboto;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: left;
-    /* margin-left: 4px; */
-    position:absolute;
-    top: 2px;
-    left: 114px;
-  }
-
   .image-ratings-box{
     width: 14px;
     height: 14px;
-    /* background-color: #FF6600; */
-    /* position:absolute; */
-    /* left: 18px; */
+    margin-right: 4px;
   }
 
   .label-rating {
@@ -81,3 +57,62 @@
     width: 54px;
     height: 16px;
   }
+
+  /* switch to mobile viewport */
+  @media screen  and (max-width: 500px) { 
+  .div-ratings-box {
+    width: 242pt;
+    height: 16pt;
+    top: 112pt;
+    left: 12pt;
+    display: flex;
+  }
+  
+  .div-stars-box {
+    width: 86pt;
+    height: 14pt;
+    background-color: #FFF0E6;
+    top: 1pt;
+    left: 0pt;
+    display: flex;
+  }
+
+  .image-ratings-box{
+    width: 14pt;
+    height: 14pt;
+    margin-right: 4pt;
+  }
+
+  .label-rating {
+    color: #FF6600;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    left: 90pt;
+    width: 17pt;
+    height: 16pt;
+  }
+
+  .label-reviews {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    left: 111pt;
+    width: 54pt;
+    height: 16pt;
+  }
+
+  .label-buyers {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    left: 189pt;
+    width: 53pt;
+    height: 16pt;
+  }    
+}

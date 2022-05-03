@@ -2,11 +2,8 @@
     width: 306px;
     height: 16px;
     position: absolute;
-    /* top: 14px;
-    left: 13px */
     top: 472px;
     display: flex;
-    /* background-color: #F5515F; */
   }
   
   .icon-trade-assurance {
@@ -19,6 +16,7 @@
     color: #999999;
     font-family: Roboto;
     font-size: 14px;
+    font-weight: bold;
     line-height: 16px;
     text-align: left;
     width: 107px;
@@ -36,5 +34,48 @@
     width: 181px;
     height: 16px;
     position: absolute;
-    left: 125px;
+    left: 127px;
   }
+
+/* switch to mobile viewport */
+@media screen  and (max-width: 500px) { 
+  .div-trade-assurance {
+    width: 306pt;
+    height: 16pt;
+    top: 496pt;
+    left: 12pt;
+    display: flex;
+  }
+  
+  .icon-trade-assurance {
+    width: 12pt;
+    height: 14pt;
+    left: 0pt;
+    top: 1pt;
+  }
+  
+  .label-trade {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 16pt;
+    text-align: left;
+    width: 107pt;
+    height: 16pt;
+    left: 18pt;
+    top: 0pt;
+  }
+  
+  .label-alibab {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    width: 181pt;
+    height: 16pt;
+    left: 127pt;
+    top: 0pt;
+  }
+}

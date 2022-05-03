@@ -6,7 +6,6 @@
     position: absolute;
     top: 116px;
     display: flex;
-    
   }
 
   .label-price-range {
@@ -73,4 +72,78 @@
     text-decoration: line-through;
     position: absolute;
     top: 36px;
+  }
+
+  /* switch to mobile viewport */
+  @media screen  and (max-width: 500px) { 
+    .div-price-box-foreground {
+      background-color: rgba(174, 51, 51, 0);
+      box-shadow: inset 0 1pt 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
+      width: 336pt;
+      height: 64pt;
+      top: 140pt;
+      left: 12pt;
+      display: flex;
+    }
+  
+    .label-price-range {
+      color: #FF6600;
+      font-family: Roboto;
+      font-size: 16pt;
+      line-height: 24pt;
+      text-align: left;
+      top: 12pt;
+      font-weight: bold;
+    }
+  
+    .label-option {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 16pt;
+      left: 135pt;
+    }
+  
+    .label-divider{
+      color: #EDF0F3;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 16pt;
+      left: 189pt;
+    }
+  
+    .label-options {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 16pt;
+      left: 200pt;
+    }
+  
+    .label-min-order {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 16pt;
+      left: 264pt;
+    }
+  
+    .label-price-range-cross {
+      color: #999999;
+      font-family: Roboto;
+      font-size: 14pt;
+      line-height: 16pt;
+      text-align: left;
+      text-decoration: line-through;
+      top: 36pt;
+      left: 0pt;
+    }    
   }

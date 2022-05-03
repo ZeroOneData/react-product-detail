@@ -1,7 +1,6 @@
 .div-badges {
     width: 271px;
     height: 20px;
-    /* background-color: #d2de1f; */
     display: flex;
     position:absolute;
     top: 0px;
@@ -13,9 +12,6 @@
     border-radius: 2px 0 0 2px;
     width: 90px;
     height: 20px;
-    /* background-color: #de1f52; */
-    /* top: 48px;
-    left:512px;  */
   }
 
   .label-rts {
@@ -45,8 +41,7 @@
     font-size: 12px;
     line-height: 16px;
     text-align: left;
-    /* margin-left: 4px; */
-    position:absolute;
+    position: absolute;
     top: 2px;
     left: 114px;
   }
@@ -54,8 +49,7 @@
   .image-instock{
     width: 12px;
     height: 12px;
-    /* background-color: #FF6600; */
-    position:absolute;
+    position: absolute;
     top: 2px;
     left: 98px;
   }
@@ -70,9 +64,7 @@
   .image-fast-despatch{
     width: 12px;
     height: 12px;
-    /* background-color: #FF6600; */
-    /* margin-left: 4px; */
-    position:absolute;
+    position: absolute;
     top: 2px;
     left: 173px;
   }
@@ -83,8 +75,87 @@
     font-size: 12px;
     line-height: 16px;
     text-align: left;
-    /* margin-left: 4px; */
-    position:absolute;
+    position: absolute;
     top: 2px;
     left: 189px;
+  }
+
+  @media screen  and (max-width: 500px) { 
+    .div-badges {
+      width: 271pt;
+      height: 20pt;
+      display: flex;
+      top: 0pt;
+      left:12pt; 
+    }
+  
+    .div-rts-background {
+      background-image: linear-gradient(270deg, #F5515F 0%, #FF7527 100%);
+      border-radius: 2pt 0 0 2pt;
+      width: 90pt;
+      height: 20pt;
+      top: 0pt;
+      left: 0pt;
+    }
+  
+    .label-rts {
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 12pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 2pt;
+      left: 8pt;
+      font-weight: normal;
+    }
+  
+    .div-instock-background {
+      background-color: #FFF0E6;
+      width: 75pt;
+      height: 20pt;
+      display: flex;
+      top: 0pt;
+      left: 90pt;
+    }
+  
+    .label-instock {
+      color: #FF6600;
+      font-family: Roboto;
+      font-size: 12pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 2pt;
+      left: 114pt;
+    }
+  
+    .image-instock{
+      width: 12pt;
+      height: 12pt;
+      top: 4pt;
+      left: 98pt;
+    }
+  
+    .div-fast-despatch-background {
+      background-color: #FFF0E6;
+      width: 106pt;
+      height: 20pt;
+      display: flex;
+    }
+  
+    .image-fast-despatch{
+      width: 12pt;
+      height: 12pt;
+      top: 4pt;
+      left: 173pt;
+    }
+  
+    .label-fast-despatch {
+      color: #FF6600;
+      font-family: Roboto;
+      font-size: 12pt;
+      line-height: 16pt;
+      text-align: left;
+      top: 2pt;
+      left: 189pt;
+    }
   }

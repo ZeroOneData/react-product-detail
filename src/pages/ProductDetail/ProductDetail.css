@@ -1,7 +1,6 @@
 .div-main {
     width: 1440px;
     height: 1024px;
-    /* background-color: blue; */
 }
 
 .image {
@@ -22,11 +21,11 @@
     left:0px; 
   }
 
+  /* switch to mobile viewport */
   @media screen  and (max-width: 500px) { 
     .div-main {
       width: 360pt;
       height: 1386pt;
-      /* background-color: aqua; */
     }
 
     .image {
@@ -41,17 +40,4 @@
       width:0pt;
       height: 0pt;
     }
-  
-    
   }
-
- 
-
-
-
-
-/* width: ;
-height: ;
-position: absolute;
-left: ;
-top: ; */

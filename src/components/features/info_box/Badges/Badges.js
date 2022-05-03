@@ -1,4 +1,3 @@
-// import React from 'react';
 import './Badges.css'
 import IN_STOCK from '../../../../static/icons8-ok.png'
 

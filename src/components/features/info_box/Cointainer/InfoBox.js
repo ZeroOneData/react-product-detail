@@ -1,4 +1,3 @@
-// import React from 'react';
 import './InfoBox.css'
 import Badges from '../Badges/Badges';
 import RatingsBox from '../RatingsBox/RatingsBox'
@@ -39,7 +38,6 @@ function InfoBox({ product, qty1080p, qty4K, qtyBattery, setQty1080p, setQty4K, 
             <TradeAssuranceBox/>
             <PaymentsBox />
             <LinksBox/>
-        
     </div>
     );
 }

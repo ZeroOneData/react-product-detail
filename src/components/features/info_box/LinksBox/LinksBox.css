@@ -3,7 +3,6 @@
     height: 16px;
     position: absolute;
     top: 528px;
-    /* background-color: aqua; */
   }
   
   .label-link-alibab {
@@ -28,3 +27,37 @@
     position: absolute;
     left: 143px;
   }
+
+  /* switch to mobile viewport */
+@media screen  and (max-width: 500px) { 
+  .div-links {
+    width: 252pt;
+    height: 16pt;
+    top: 552pt;
+    left: 12pt;
+  }
+  
+  .label-link-alibab {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    width:119pt;
+    height: 16pt;
+    top: 0pt;
+    left: 0pt;
+  }
+  
+  .label-link-inspection {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    width: 109pt;
+    height: 16pt;
+    left: 143pt;
+    top: 0pt;
+  }
+}

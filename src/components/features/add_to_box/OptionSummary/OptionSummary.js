@@ -2,14 +2,19 @@ import './OptionSummary.css'
 
 function OptionSummary({ product, qty1080p, qty4K, qtyBattery }) {
 
-    const options_array = Object.values(product.product.options)
-    const currency = options_array[0].price.currency.symbol
+
+//logic for Cart option summary content
+    const options_array = Object.values(product.product.options) //extract options array from js object
+    const currency = options_array[0].price.currency.symbol //extract currency symbol
     
-    const total_1080p = options_array[0].price.value * qty1080p
+    //calculate individual option totals based on price and quantity
+    const total_1080p = options_array[0].price.value * qty1080p 
     const total_4k = options_array[1].price.value * qty4K
     const total_battery = options_array[2].price.value * qtyBattery
 
+    //calculate grand total
     const total_values = total_1080p + total_4k + total_battery
+//end logic
 
     return (
         <div className='div-top-content'>
@@ -41,12 +46,10 @@ function OptionSummary({ product, qty1080p, qty4K, qtyBattery }) {
             </div>
             :
             <div className='div-product-row-summary' style={{marginTop: 92}} />
-            }
-              
+            }  
             <hr style = {{marginTop: 160, marginLeft: 24, marginRight: 10}}></hr>
             <div className='label-product-total-summary'>Total:</div>
-            <div className='label-product-total-summary-value'>{`${currency} ${total_values.toFixed(2)}`}</div>
-            
+            <div className='label-product-total-summary-value'>{`${currency} ${total_values.toFixed(2)}`}</div>   
         </div>
     );
 }

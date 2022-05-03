@@ -15,6 +15,7 @@ function ProductDetail() {
     const [isLoading, setIsLoading] = useState(true)
     const [openErrorDialog, setOpenErrorDialog] = useState(false);
 
+    //fetch data from api when component first mounts, and store in state
     useEffect(() => {
         fetch(`https://fe-assignment.vaimo.net/`)
         .then(res => {
@@ -27,22 +28,22 @@ function ProductDetail() {
         .then(data => {
             setProduct(data)           
             setImage(data.product.gallery[0].main)
-            console.log(data.product.gallery[0].main)
             setIsLoading(false)
             setError(null)
             setErrorCode(null)
             setOpenErrorDialog(false)
         })
-        .catch(err => {
+        .catch(err => {             // catch any errors from api call
             setError(err.message)
             setOpenErrorDialog(true)
             setIsLoading(false)
         })
         .finally(() => {
-            setIsLoading(false);
+            setIsLoading(false);  //finished fetching api data
           });
     }, [])
 
+    //conditionally render content depending on loading and/or error states
     if (isLoading) {
         return <h3>Data is loading...</h3>;
       }

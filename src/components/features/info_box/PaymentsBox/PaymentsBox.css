@@ -3,7 +3,6 @@
     height: 16px;
     position: absolute;
     top: 500px;
-    /* background-color:#F5515F */
   }
   
   .label-payments {
@@ -38,3 +37,44 @@
     left: 102px ;
     top: 2px; 
   }
+
+/* switch to mobile viewport */
+@media screen  and (max-width: 500px) { 
+  .div-payments {
+    width: 130pt;
+    height: 16pt;
+    top: 524pt;
+    left: 12pt;
+  }
+  
+  .label-payments {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: left;
+    left: 0pt;
+    top: 0pt;
+  }
+  
+  .icon-visa {
+  width: 17pt; 
+  height: 12pt;
+  left: 60pt ;
+  top: 2pt; 
+  }
+  
+  .icon-mastercard {
+    width: 17pt; 
+    height: 12pt;
+    left: 81pt ;
+    top: 2pt; 
+  }
+  
+  .icon-apple-pay {
+    width: 28pt; 
+    height: 12pt;
+    left: 102pt ;
+    top: 2pt; 
+  }
+}

@@ -1,7 +1,6 @@
 .label-product-name {
     color: #333333;
     font-family: Roboto;
-    /* background-color: #FF6600; */
     font-size: 16px;
     line-height: 24px;
     width: 526px;
@@ -9,4 +8,19 @@
     text-align: left;
     position:absolute;
     top: 28px;
+  }
+
+  /* switch to mobile viewport */
+  @media screen  and (max-width: 500px) { 
+    .label-product-name {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 16pt;
+      line-height: 24pt;
+      width: 336pt;
+      height: 72pt;
+      text-align: left;
+      top: 28pt;
+      left: 12pt;
+    }    
   }

@@ -4,7 +4,6 @@
     position: absolute;
     top: 256px;
     display: flex;
-    /* background-color: #F5515F; */
 }
 
 .label-discount {
@@ -31,7 +30,6 @@
 .icon-discount-end {
   width: 16px;
   height: 16px;
-  /* background-color: #999999; */
   position: absolute;
   top: 4px;
   left: 187px;
@@ -45,7 +43,56 @@
   text-align: left;
   width: 113px;
   height: 24px;
-  /* background-color: #999999; */
   position: absolute;
   left: 215px;
+}
+
+/* switch to mobile viewport */
+@media screen  and (max-width: 500px) { 
+  .div-countdown-timer {
+    width: 328pt;
+    height: 24pt;
+    top: 280pt;
+    left: 12pt;
+    display: flex;
+}
+
+.label-discount {
+  color: #FF6600;
+  font-family: Roboto;
+  font-size: 14pt;
+  line-height: 16pt;
+  text-align: left;
+  top: 4pt;
+  left: 0pt;
+}
+
+.label-discount-end {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14pt;
+  line-height: 16pt;
+  text-align: left;
+  top: 4pt;
+  left: 59pt;
+}
+
+.icon-discount-end {
+  width: 16pt;
+  height: 16pt;
+  top: 4pt;
+  left: 187pt;
+}
+
+.label-date-time {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 16pt;
+  line-height: 24pt;
+  text-align: left;
+  width: 113pt;
+  height: 24pt;
+  left: 215pt;
+  top: 0pt;
+}
 }
