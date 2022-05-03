@@ -29,7 +29,7 @@ function ProductBox({ product, qty1080p, qty4K, qtyBattery, setQty1080p, setQty4
                 <div className='label-product-option-name'>{option_labels[2].label}</div>
                 <div className='label-product-option-price'>{`${option_labels[2].price.currency.symbol} ${option_labels[2].price.value.toFixed(2)}`}</div>
                 <div className='div-product-quantinity' >
-                    <Rockers setterCallback={setQtyBattery} quantity={qtyBattery} min={0} max={10} step={1}/>
+                    <Rockers setterCallback={setQtyBattery} quantity={qtyBattery} min={0} max={50} step={1}/>
                 </div>
             </div>
         </div>

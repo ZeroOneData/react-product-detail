@@ -25,12 +25,12 @@ The goal of the application is to provide a PIXEL-PERFECT product detail page fo
 
 * QTY rockers next to product options should function (+ and - buttons increase and decrease QTY) as well as QTY itself must be an input field that 
 accepts valid numbers:
-    a. Lowest allowed value is 0. If the value is 0, - button becomes grayed out and non-clickable.
-    b. Increment step is 1 (if value is 3 and you press “+”, value changes to “4” and so forth).
-    c. If an incorrect value is entered using the input field (e.g. -10), on blur-event that value should
-    change to the last valid value used instead. - unimplemented
-    d. Having QTY 1 or more means the option is primed to be added to cart and must appear in the
-    right hand sidebar above shipping info.
+    - Lowest allowed value is 0. If the value is 0, - button becomes grayed out and non-clickable.
+    - Increment step is 1 (if value is 3 and you press “+”, value changes to “4” and so forth).
+    - If an incorrect value is entered using the input field (e.g. -10), on blur-event that value should
+        change to the last valid value used instead. - this includes monitoring the min and max props of the reusable Rocker component.
+    - Having QTY 1 or more means the option is primed to be added to cart and must appear in the
+        right hand sidebar above shipping info in a custom Cart Summary.
 
 * Right sidebar should contain product options with QTY 1 or more (option summary) and the calculated price for each of them:
     a. If an option with a price of R10 has QTY=2, the price in summary should be R20.
@@ -39,7 +39,7 @@ accepts valid numbers:
 
 * A functioning discount timer that counts down to the discount end date provided by the API.
 
-* A fully functioning, reusable and shareable 'Quanity Rocker' component - configured to have different minvalue, max value and step increment value.
+* A fully functioning, reusable and shareable 'Quanity Rocker' component - configured to have different min value, max value and step increment value.
 
 * Tech-Stack utilised:
     -   React.js

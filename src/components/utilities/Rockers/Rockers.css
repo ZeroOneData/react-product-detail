@@ -27,8 +27,8 @@
   .rocker-quantity-foreground {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: inset 0 1px 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
-    width: 79px;
-    height: 42px;
+    width: 74px;
+    height: 40px;
     position: absolute;
     left: 42px;
     color: #999999;
@@ -36,6 +36,8 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+    border:0;
+    outline:0;
   }
 
   .rocker-quantity-value {
@@ -57,6 +59,17 @@
     height: 40px;
     position: absolute;
     left: 120px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
   }
 
   .rocker-icon-plus-foreground-deactive {
@@ -97,6 +110,17 @@
     height: 40pt;
   }
 
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
   .rocker-icon-minus {
       width: 14pt;
       height: 2pt;
@@ -107,8 +131,8 @@
   .rocker-quantity-foreground {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: inset 0 1pt 0 0 #E6E7EB, inset 0 -1pt 0 0 #E6E7EB;
-    width: 39pt;
-    height: 41pt;
+    width: 37pt;
+    height: 39.5pt;
     left: 41pt;
     top: 0pt;
     color: #999999;

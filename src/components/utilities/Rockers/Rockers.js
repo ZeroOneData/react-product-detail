@@ -7,6 +7,7 @@ import PLUS_ICON from '../../../static/plus.png'
 // reusable functional Quantity Rocker component with customisable, minimum, maximum and step values
 function Rockers({ quantity , setterCallback, min, max, step }) {
 
+
     //function to decrement quantity of rocker value
     function minusFunction() {
         if (step) {
@@ -32,6 +33,7 @@ function Rockers({ quantity , setterCallback, min, max, step }) {
         }
     }
 
+    //conditional logic for optional min and max props
     let live_min = 0
     if (min) {
         live_min = min
@@ -44,25 +46,43 @@ function Rockers({ quantity , setterCallback, min, max, step }) {
 
     return (
         <div className='rocker-div'>
-            { quantity <= live_min   ?
+            { quantity <= live_min   ? //turn rocker on or off
                 <div className='rocker-icon-minus-foreground'  >
-                    <img className='rocker-icon-minus' src={ MINUS_ICON }></img>
+                    <img className='rocker-icon-minus' src={ MINUS_ICON } alt=''></img>
                 </div>
                 :
                 <div className='rocker-icon-minus-foreground-active' onClick={minusFunction}>
-                    <img className='rocker-icon-minus' src={ MINUS_ICON }></img>
+                    <img className='rocker-icon-minus' src={ MINUS_ICON } alt=''></img>
                 </div>
                 }
-                <div className='rocker-quantity-foreground'>
-                    <div className='rocker-quantity-value'>{ quantity }</div>
-                </div>
-                { quantity < live_max   ?
+                <input 
+                    type='number' 
+                    className='rocker-quantity-foreground' 
+                    value={quantity} 
+                    max={live_max}
+                    min={live_min}
+                    onChange={(e) => {
+
+                        //handle logic for incorrect input incl. min and max bounderies
+                        const value = Math.floor(e.target.value)  
+                        if(value > live_max){
+                            setterCallback(quantity)
+                        }
+                        else if(value < live_min){
+                            setterCallback(quantity)
+                        }
+                        else{
+                            setterCallback(value)
+                        }
+                        }}
+                    />
+                { quantity < live_max   ?  //turn rocker on or off 
                 <div className='rocker-icon-plus-foreground' onClick={plusFunction}>
-                    <img className='rocker-icon-plus' src={ PLUS_ICON }></img>
+                    <img className='rocker-icon-plus' src={ PLUS_ICON } alt=''></img>
                 </div>
                 :
                 <div className='rocker-icon-plus-foreground-deactive' >
-                    <img className='rocker-icon-plus' src={ PLUS_ICON }></img>
+                    <img className='rocker-icon-plus' src={ PLUS_ICON } alt=''></img>
                 </div>
                 }
         </div>

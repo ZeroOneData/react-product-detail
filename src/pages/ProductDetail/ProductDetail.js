@@ -53,7 +53,7 @@ function ProductDetail() {
 
     return (
         <div className='div-main'>
-            <img  className="image" src= {`${image}`}></img>
+            <img  className="image" src= {`${image}`} alt=''></img>
             <InfoBox 
                 product={product} 
                 qty1080p={qty1080p} 
@@ -71,7 +71,6 @@ function ProductDetail() {
             />
             <div className='div-background' />
         </div>
-
     )    
 }
 
